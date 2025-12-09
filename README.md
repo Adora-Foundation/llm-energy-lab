@@ -1,11 +1,9 @@
-# LLM Energy Lab
-
-
-
-  <img src="./static/AdoraFoundation_logo.jpeg" alt="LLM Energy Lab" width="20%" />
+ <img src="./static/AdoraFoundation_logo.jpeg" alt="LLM Energy Lab" width="20%" />
 <p>
 
----
+ ---
+
+# LLM Energy Lab
 
 _Version 0.1.0_
 
