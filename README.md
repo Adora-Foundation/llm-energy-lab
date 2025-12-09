@@ -1,10 +1,13 @@
 # LLM Energy Lab
 
-_Version 0.1.0_
 
-<p align="center">
-  <img src="./static/AdoraFoundation_logo.jpeg" alt="LLM Energy Lab" width="30%" />
-</p>
+
+  <img src="./static/AdoraFoundation_logo.jpeg" alt="LLM Energy Lab" width="20%" />
+<p>
+
+---
+
+_Version 0.1.0_
 
 The **LLM Energy Lab ** is a web application and API for benchmarking and comparing LLM energy consumption, emissions and behaviour on cloud and bare metal, under different inference configs, middleware scaffolds and post-training implementations
 
