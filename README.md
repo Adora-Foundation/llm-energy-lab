@@ -2,6 +2,10 @@
 
 _Version 0.1.0_
 
+<p align="center">
+  <img src="./static/AdoraFoundation_logo.jpeg" alt="LLM Energy Lab" width="30%" />
+</p>
+
 The **LLM Energy Lab ** is a web application and API for benchmarking and comparing LLM energy consumption, emissions and behaviour on cloud and bare metal, under different inference configs, middleware scaffolds and post-training implementations
 
 It is designed to surface the impacts of LLM middleware scaffolds and configurations on LLM's raw behaviours and energy footprint. On linux bare metal it measures energy consumption per 1000 energy-weighted tokens (e-tokens), and n run live hardware tests via RAPL. On cloud it applies rigorous benchmark estimates to compare energy profiles across models, prompts, LLM configurations and middleware context-injections.
