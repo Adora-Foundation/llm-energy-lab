@@ -66,12 +66,15 @@ It is designed to surface the impacts of LLM middleware scaffolds and configurat
  ✅ Multi-model comparison panes with per-pane controls.
  
  ✅ Streaming outputs, token counts (prompt/completion), and TPS.
- 
- ## Conceptual Overview
- 
- At its core, the LLM Behaviour Lab enables systematic exploration of how **deterministic, interpretable and corrigible human-defined parameters extrinsic to the model** interact with the **intrinsic, probabilistic model outputs**. These deterministic parameters include both the direct inference time configuration and code scaffolds (e.g. system/user prompts, temperature, token limits), and the post training inputs (e.g. Q&A, instructions, preferences, reinforcements).
- 
- High-level data flow:
+
+## Conceptual Overview
+
+At its core, the LLM Behaviour Lab enables systematic exploration of how **deterministic, interpretable and corrigible human-defined parameters extrinsic to the model** interact with the **intrinsic, probabilistic model outputs**. These deterministic parameters include both the direct inference time configuration and code scaffolds (e.g. system/user prompts, temperature, token limits), and the post training inputs (e.g. Q&A, instructions, preferences, reinforcements).
+
+The wider context is explored in Adora Foundation's [Token Optimization White Paper](./documentation/Adora%20Foundation%20%E2%80%93%20Token%20Optimization%20White%20Paper.pdf), which highlights the "Non-Equivalence Problem," where visible input/output tokens underestimate true compute costs by orders of magnitude due to hidden layers like system prompts, tools, and agentic workflows. The paper advocates for TokenOps: the discipline of treating tokens and energy as core design constraints. Key principles include rightsizing models, optimizing context windows, and maintaining green software hygiene to minimize environmental impact. This energy lab is a tool designed to facilitate this.
+
+
+High-level data flow:
  
  - **Browser UIs** (`/energy`, `/comparison`, plus the main lab selector) collect prompts, temperatures, injection strategies, tool settings, and energy benchmark choices.
  - **FastAPI apps** (`app_llm_behaviour_lab.py` and the standalone apps) compose final system/user prompts, apply prompt injections and tool integrations, and stream tokens over WebSockets.
